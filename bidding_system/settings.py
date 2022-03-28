@@ -1,4 +1,4 @@
-# import django_heroku
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -120,4 +120,4 @@ LOGIN_URL='/login/'
 
 
 # Activate Django-Heroku.
-# django_heroku.settings(locals(), databases=False)
+django_heroku.settings(locals(),databases=True)
