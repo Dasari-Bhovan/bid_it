@@ -44,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'bidding_system.urls'
+ROOT_URLCONF = 'bid_it.urls'
 
 TEMPLATES = [
     {
@@ -62,7 +62,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bidding_system.wsgi.application'
+WSGI_APPLICATION = 'bid_it.wsgi.application'
 
 
 # Database

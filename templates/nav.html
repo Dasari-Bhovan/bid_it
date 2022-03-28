@@ -43,7 +43,7 @@
 <ul class="sidenav" id="mobile-demo" style="background-color: black;">
     <br>
 
-    <a style="color:white; font-family: 'Pacifico', cursive; font-size: 250%; background-color: black; border-radius: 30px; border: 2px gold solid;" href="" class="brand-logo">&nbsp;&nbsp;Bid It!&nbsp;&nbsp;</a>
+    <a style="color:white; font-family: 'Pacifico', cursive; font-size: 250%; background-color: black; border-radius: 30px; border: 2px gold solid;margin-left:50px" href="" class="brand-logo">&nbsp;&nbsp;Bid It!&nbsp;&nbsp;</a>
     <br>
     <br>
     <li><a href="{% url 'app:home' %}" style="color: white; font-size: 30;"><i class="material-icons"
@@ -58,10 +58,10 @@
     {% if user.is_authenticated %}
     <li><a class="btn-small waves-effect waves-orange grey darken-4" href="{% url 'app:logout' %}">Logout</a></li>
     {% else %}
-    <li><a class="btn-small waves-effect waves-orange black" href="{% url 'app:register' %}">
+    <li><a class="btn-small waves-effect waves-orange red" href="{% url 'app:register' %}">
             Register</a>
     </li>
-    <li><a class="btn-small waves-effect waves-orange black" href="{% url 'app:login' %}">
+    <li><a class="btn-small waves-effect waves-orange red" href="{% url 'app:login' %}">
             Login</a>
     </li>
     {% endif %}

@@ -1,1 +1,1 @@
-web: gunicorn bidding_system.wsgi
+web: gunicorn bid_it.wsgi
