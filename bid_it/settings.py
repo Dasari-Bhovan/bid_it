@@ -19,7 +19,7 @@ SECRET_KEY = 'u&u)*)c5cl@^syz^*5kq0^em#+3fu7(!=n1mjpoh$i5heoc_t2'
 #     DEBUG = True
 DEBUG=False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://bid-bud.herokuapp.com/login/']
 
 
 # Application definition
