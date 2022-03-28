@@ -90,7 +90,7 @@ def placement_detail(request, placement_slug):
                                                     bid=bid,
                                                     offer=submitted_amount,
                                                     shares=submitted_quantity)
-        return redirect('app:home')
+        return redirect("/my-bids/")
 
     context = {'placement': placement}
 
