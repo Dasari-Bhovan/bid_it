@@ -2,12 +2,29 @@
 
 {% block content %}
 {% include 'nav.html' %}
-
+{% load static %}
 <section class="section">
     <section class="container">
         <div class="card" style="border: 3px solid gold; border-radius: 10px;">
             <div class="card-content">
-                <h4>Your bid summary</h4>
+                <h3>Your bid summary</h3>
+                <br>
+                <h6>Please Scroll Down⬇</h6>
+                <div class="card-content">
+                    <div class="col s12 m7">
+                        <div  class="card" style="box-shadow: 10px 10px 5px lightblue;">
+                            <div class="card-image">
+                                
+                                <img  src="{% static 'biddy3.webp' %}">
+                                <span class="card-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black;">&nbsp; &nbsp;&nbsp;Bid Summary</span>
+                            </div>
+                            <div class="card-content">
+                                <p><strong>Check and Confirm your bids!</strong></p>
+                            </div>
+                            <!-- <div class="card-action">
+                                <a href=" https://economictimes.indiatimes.com/topic/bidding-system">News🌐</a>
+                            </div> -->
+                        </div>
                 <table class="striped centered responsive-table">
                     <thead>
                         <tr>
