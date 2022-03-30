@@ -19,7 +19,7 @@ else:
     DEBUG = True
 
 
-ALLOWED_HOSTS = ['https://bid-bud.herokuapp.com/login/']
+ALLOWED_HOSTS = ['https://bid-bud.herokuapp.com/login/',"localhost"]
 
 
 # Application definition
@@ -67,14 +67,25 @@ WSGI_APPLICATION = 'bid_it.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+#database for local dbsqlite
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-
+#database for local database postgresql
+# DATABASES={
+#    'default':{
+#       'ENGINE':'django.db.backends.postgresql_psycopg2',
+#       'NAME':'nirmal1',
+#       'USER':'postgres',
+#       'PASSWORD':'bhovan123#',
+#       'HOST':'localhost',
+#       'PORT':'5432',
+#    }
+# }
+##database for deploying in heroku
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
